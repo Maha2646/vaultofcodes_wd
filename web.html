@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Vaultofcodes</title>
+    <style>
+        /* CSS for the header container */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white; /* Change the background color as needed */
+        }
+
+        /* CSS for the logo */
+        .logo {
+            width: 100px; /* Adjust the logo width as needed */
+            height: auto;
+        }
+
+        /* CSS for the navigation links */
+        .nav {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        /* CSS for individual navigation items */
+        .nav li {
+            margin-right: 20px; /* Adjust the spacing between navigation items as needed */
+        }
+
+        /* CSS for navigation links */
+        .nav a {
+            text-decoration: none;
+            color: black; /* Change the text color as needed */
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* CSS for the second navigation bar on the right */
+        .nav-right {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        /* CSS for individual items in the second navigation bar */
+        .nav-right li {
+            margin-left: 20px; /* Adjust the spacing between items as needed */
+        }
+
+        /* CSS for links in the second navigation bar */
+        .nav-right a {
+            text-decoration: none;
+            color: black; /* Change the text color as needed */
+            font-weight: bold;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next, .text {font-size: 11px}
+        }
+
+        /* CSS for the container */
+        .container2 {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        /* CSS for the text on the left side */
+        .text2 {
+            flex: 1;
+            color: black;
+        }
+
+        /* CSS for the image on the right side */
+        .image2 {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        /* CSS for responsive layout */
+        @media (max-width: 768px) {
+            .container2 {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text2, .image2 {
+                flex: none;
+                width: 100%;
+            }
+        }
+        .l{
+          font-size: 25px;
+        }
+        .button {
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color:lavender;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  display: flex;
+}
+
+.button:hover {background-color:lavenderblush;}
+
+.button:active {
+  background-color: white;
+  
+  transform: translateY(4px);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://vaultofcodes.com/cdn/shop/files/Untitled_5.png?v=1695629147&width=600" alt="Logo">
+        <nav>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="file:///C:/Users/sowndarya%20vathi/OneDrive/Desktop/python/internship/catalog.html" target="_blank">Catalog</a></li>
+                <li><a href="file:///C:/Users/sowndarya%20vathi/OneDrive/Desktop/python/internship/contact.html" target="_blank">Contact</a></li>
+                <li><a href="file:///C:/Users/sowndarya%20vathi/OneDrive/Desktop/python/internship/internships.html" target="_blank">Internship</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="nav-right">
+                <li><a href="#clients"><i class="fa fa-fw fa-search"></i></a></li>
+                <li><a href="#"><i class="fa fa-fw fa-shopping-cart"></i></a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://api.reliasoftware.com/uploads/the_complete_guide_to_mobile_app_development_2021_ded2abd1b1.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://nearlearn.com/blog/wp-content/uploads/2020/07/Savvycom-AI-Lab.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://midriffinfosolution.org/wp-content/uploads/2022/03/web-development.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    <div class="container2">
+        <div class="image2">
+            <img src="https://www.techsquare.com.hk/wp-content/uploads/2020/06/FotoJet-9-1024x511.jpg" alt="Image" width="600" height="400">
+        </div>
+        <div class="text2">
+            <h1>Our Services</h1>
+            <ul>
+              <li class="l">App Development</li><br>
+              <li class="l">Website Development</li><br>
+              <li class="l">Software Development</li>
+            </ul>
+            <p class="l">Upgrade your skills by learning.<br><br> To learn new things</p>
+            <button class="button"><a href="file:///C:/Users/sowndarya%20vathi/OneDrive/Desktop/python/internship/contact.html" target="_blank">Contact Us</a></button>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+</html>
